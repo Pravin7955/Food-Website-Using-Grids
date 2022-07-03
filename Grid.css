@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.container {
+    background-color: gray;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 175px 50px 100px 500px 95px;
+    grid-gap: 6px;
+}
+
+
+/* Banner on top */
+#banner {
+    grid-column: 1 / span 2;
+}
+
+#banner img {
+    height: 175px;
+    width: 100%;
+}
+
+
+/* Navigation Bar */
+#nav {
+    background-color: black;
+    grid-column: 1 / span 2;
+    position: sticky;
+    top: 0;
+}
+
+#nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#nav ul li {
+    padding: 10px;
+}
+
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+#nav ul li a:hover {
+    background-color: rgb(80, 80, 80);
+    color: white;
+    box-shadow: -2px -2px 3px gray;
+}
+
+
+/* Header with video */
+#header {
+    grid-column: 1 / span 2;
+    background-color: black;
+    color: white;
+}
+
+#header h1 {
+    text-align: center;
+    margin: 15px;
+    padding-top: 5px;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px white;
+}
+
+
+/* sideBar */
+#sideBar {
+    grid-column: 1 / 2;
+    background-color: black;
+    overflow: scroll;
+}
+
+#sideBar video {
+    height: auto;
+    width: 100%;
+}
+
+#sideBar h2 {
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+
+#sideBar p {
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+
+/* bodyArea */
+#bodyArea {
+    grid-column: 2 / 3;
+    background-color: black;
+    overflow: scroll;
+}
+
+#bodyArea div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#bodyArea div img {
+    margin: 5px 10px;
+    height: 150px;
+    width: 150px;
+    transition: 2s;
+}
+
+#bodyArea div img:hover {
+    transform: rotate(360deg);
+}
+
+
+/* Footer */
+#footer {
+    background-color: black;
+    grid-column: 1 / span 2;
+}
+
+#footer ul {
+    display: flex;
+    list-style: none;
+    margin-top: 8px;
+    margin-left: 10px;
+    padding: 5px;
+    justify-content: center;
+}
+
+#footer ul li {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#icon1 {
+    color: #4267B2;
+}
+#icon2 {
+    color: #C13584;
+}
+#icon3 {
+    color: #c4302b;
+}
+#icon4 {
+    color: #0e76a8;
+}
+
+#footer ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+
+#footer ul li:hover{
+    background-color: rgb(80, 80, 80);
+    color: white;
+    box-shadow: -2px -2px 3px gray;
+}
+
+#footer hr {
+    margin-bottom: 10px;
+}
+
+#footer p {
+    color: white;
+    text-align: center;
+    font-size: small;
+}
